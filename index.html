@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Browser</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        setInterval(function() {
+            const now = new Date();
+        document.getElementById("clock").innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <script>
+        function darkMode() {
+    document.body.classList.toggle("dark");
+    }
+    </script>
+</head>
+<body>
+
+    <h1>Welcome to My First Browser</h1>
+    <h2 id="clock"></h2>
+    <button onclick="darkMode()">Toggle Dark Mode</button>
+
+    <div class="container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-box" placeholder="Search Google..." required>
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+     </div>
+    <div class="logo-container">
+
+<a href="https://www.google.com/">
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+<p>Google</p>
+</a>
+
+<a href="https://www.youtube.com/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png">
+<p>YouTube</p>
+</a>
+
+<a href="https://mail.google.com/mail/u/0/">
+<img src="https://www.computerhope.com/jargon/g/gmail.png">
+<p>Mail</p>
+</a>
+
+<a href="https://maps.google.com/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/960px-Google_Maps_Logo_2020.svg.png">
+<p>Maps</p>
+</a>
+
+<a href="https://chatgpt.com/">
+<img src="https://cdn-1.webcatalog.io/catalog/chatgpt/chatgpt-icon-filled-256.png">
+<p>ChatGPT</p>
+</a>
+
+<a href="https://gemini.google.com/?hl=en-IN">
+<img src="https://stage.maaal.com/storage/uploads/photos/news/2026-01/1854102090075582.png">
+<p>Gemini</p>
+</a>
+
+</div>
+
+</body>
+</html>
